@@ -19,6 +19,7 @@ class HFLM(BaseLM):
         assert isinstance(pretrained, str)
         assert isinstance(batch_size, int)
 
+        # note: moving to gpu handled in from_pretrained(device_map='auto')
         if device:
             if device not in ["cuda", "cpu"]:
                 device = int(device)
@@ -39,7 +40,10 @@ class HFLM(BaseLM):
         self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
             pretrained,
             revision=revision,
-        ).to(self.device)
+            # TODO: jerry update for LLM load
+            torch_dtype=torch.float16,
+            device_map='auto',
+        ) #.to(self.device)
         self.gpt2.eval()
 
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(
@@ -59,15 +63,16 @@ class HFLM(BaseLM):
 
         self.vocab_size = self.tokenizer.vocab_size
 
-        if isinstance(
-            self.tokenizer, (transformers.GPT2Tokenizer, transformers.GPT2TokenizerFast)
-        ):
-            assert self.tokenizer.encode("hello\n\nhello") == [
-                31373,
-                198,
-                198,
-                31373,
-            ], self.tokenizer.encode("hello\n\nhello")
+        # TODO: jerry update commenting this out, see https://github.com/EleutherAI/lm-evaluation-harness/issues/368
+        # if isinstance(
+        #     self.tokenizer, (transformers.GPT2Tokenizer, transformers.GPT2TokenizerFast)
+        # ):
+        #     assert self.tokenizer.encode("hello\n\nhello") == [
+        #         31373,
+        #         198,
+        #         198,
+        #         31373,
+        #     ], self.tokenizer.encode("hello\n\nhello")
 
         # multithreading and batching
         self.batch_size_per_gpu = batch_size  # todo: adaptive batch size
