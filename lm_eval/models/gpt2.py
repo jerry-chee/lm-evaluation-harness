@@ -43,6 +43,8 @@ class HFLM(BaseLM):
             # TODO: jerry update for LLM load
             torch_dtype=torch.float16,
             device_map='auto',
+            offload_folder='/home/jc3464/QuantHerd/lm-evaluation-harness/lm_offload',
+            offload_state_dict=True,
         ) #.to(self.device)
         self.gpt2.eval()
 

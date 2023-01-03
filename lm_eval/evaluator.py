@@ -40,6 +40,7 @@ def simple_evaluate(
         Batch size for model
     :param device: str, optional
         PyTorch device (e.g. "cpu" or "cuda:0") for running models
+        #TODO jerry update: device no longer used, using device_map instead
     :param no_cache: bool
         Whether or not to cache
     :param limit: int, optional
