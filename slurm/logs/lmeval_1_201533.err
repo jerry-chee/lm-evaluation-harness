@@ -1,0 +1,1 @@
+/var/spool/slurmd/job201533/slurm_script: line 21: 11187 Bus error               (core dumped) python main.py --model gpt2 --model_args pretrained=bigscience/bloom --tasks lambada_openai

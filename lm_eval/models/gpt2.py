@@ -19,7 +19,7 @@ class HFLM(BaseLM):
         assert isinstance(pretrained, str)
         assert isinstance(batch_size, int)
 
-        # note: moving to gpu handled in from_pretrained(device_map='auto')
+        # TODO update: moving to gpu handled in from_pretrained(device_map='auto')
         if device:
             if device not in ["cuda", "cpu"]:
                 device = int(device)
