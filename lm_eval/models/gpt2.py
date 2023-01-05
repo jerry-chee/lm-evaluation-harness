@@ -12,6 +12,7 @@ class HFLM(BaseLM):
         subfolder=None,
         tokenizer=None,
         batch_size=1,
+        offload_folder="lm_offload"
     ):
         super().__init__()
 
@@ -41,9 +42,10 @@ class HFLM(BaseLM):
             pretrained,
             revision=revision,
             # TODO: jerry update for LLM load
+            use_auth_token="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",
             torch_dtype=torch.float16,
             device_map='auto',
-            offload_folder='/home/jc3464/QuantHerd/lm-evaluation-harness/lm_offload',
+            offload_folder=offload_folder,
             offload_state_dict=True,
         ) #.to(self.device)
         self.gpt2.eval()
@@ -51,6 +53,7 @@ class HFLM(BaseLM):
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(
             pretrained if tokenizer is None else tokenizer,
             revision=revision,
+            use_auth_token="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",
         )
 
         assert isinstance(

@@ -1,3 +1,4 @@
+import os
 import argparse
 import json
 import logging
@@ -40,6 +41,7 @@ def parse_args():
     parser.add_argument("--decontamination_ngrams_path", default=None)
     parser.add_argument("--description_dict_path", default=None)
     parser.add_argument("--check_integrity", action="store_true")
+    parser.add_argument("--offload_folder", type=str, default=None)
 
     return parser.parse_args()
 
@@ -76,6 +78,8 @@ def main():
         with open(args.description_dict_path, "r") as f:
             description_dict = json.load(f)
 
+    if not os.path.isdir(args.offload_folder): os.mkdir(args.offload_folder)
+
     results = evaluator.simple_evaluate(
         model=args.model,
         model_args=args.model_args,
@@ -88,6 +92,7 @@ def main():
         description_dict=description_dict,
         decontamination_ngrams_path=args.decontamination_ngrams_path,
         check_integrity=args.check_integrity,
+        offload_folder=args.offload_folder,
     )
 
     dumped = json.dumps(results, indent=2)

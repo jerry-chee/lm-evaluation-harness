@@ -1,0 +1,1 @@
+/var/spool/slurmd/job202064/slurm_script: line 21: 854688 Bus error               (core dumped) python main.py --model gpt2 --model_args pretrained=jc3464/opt-30b_W8A8_per_tensor --tasks lambada_openai,hellaswag,piqa,winogrande,openbookqa,rte,copa,wikitext
