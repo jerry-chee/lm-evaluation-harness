@@ -1,0 +1,137 @@
+Found cached dataset hellaswag (/home/jc3464/.cache/huggingface/datasets/hellaswag/default/0.1.0/c37cd37196278995f42bc32f532730ae9b0d5f0f4a2d3b97735c17ff3ad67169)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:01<00:02,  1.17s/it] 67%|██████▋   | 2/3 [00:01<00:00,  1.64it/s]100%|██████████| 3/3 [00:01<00:00,  2.34it/s]100%|██████████| 3/3 [00:01<00:00,  1.88it/s]
+Found cached dataset glue (/home/jc3464/.cache/huggingface/datasets/glue/rte/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 31.13it/s]
+Found cached dataset winogrande (/home/jc3464/.cache/huggingface/datasets/winogrande/winogrande_xl/1.1.0/a826c3d3506aefe0e9e9390dcb53271070536586bab95849876b2c1743df56e2)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  2.47it/s]100%|██████████| 3/3 [00:00<00:00,  6.21it/s]
+No config specified, defaulting to: lambada_openai/default
+Found cached dataset lambada_openai (/home/jc3464/.cache/huggingface/datasets/EleutherAI___lambada_openai/default/1.0.0/57baddecfa09d1790541ef07274c5666abfbe9d2ccd0cd46013cd557b0343095)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.43it/s]
+Found cached dataset piqa (/home/jc3464/.cache/huggingface/datasets/piqa/plain_text/1.1.0/6c611c1a9bf220943c4174e117d3b660859665baf1d43156230116185312d011)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  7.47it/s]100%|██████████| 3/3 [00:00<00:00, 13.26it/s]100%|██████████| 3/3 [00:00<00:00, 12.29it/s]
+Found cached dataset wikitext (/home/jc3464/.cache/huggingface/datasets/wikitext/wikitext-2-raw-v1/1.0.0/c7f10a7786444f898dd236db33d4bee9b130f8cbcac690e7bde9b0d027e19fc1)
+  0%|          | 0/3 [00:00<?, ?it/s] 67%|██████▋   | 2/3 [00:00<00:00,  9.70it/s]100%|██████████| 3/3 [00:00<00:00, 10.54it/s]
+Found cached dataset super_glue (/home/jc3464/.cache/huggingface/datasets/super_glue/copa/1.0.3/bb9675f958ebfee0d5d6dc5476fafe38c79123727a7258d515c450873dbdbbed)
+  0%|          | 0/3 [00:00<?, ?it/s] 67%|██████▋   | 2/3 [00:00<00:00, 16.86it/s]100%|██████████| 3/3 [00:00<00:00, 24.50it/s]
+Found cached dataset openbookqa (/home/jc3464/.cache/huggingface/datasets/openbookqa/main/1.0.1/f338ccacfbc86fb8c2de3aa1c06d2ce686933de3bca284dba97d32592c52b33f)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  8.69it/s]100%|██████████| 3/3 [00:00<00:00, 19.01it/s]
+  0%|          | 0/54260 [00:00<?, ?it/s]  0%|          | 0/54260 [00:20<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 88, in simple_evaluate
+    results = evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 249, in evaluate
+    resps = getattr(lm, reqtype)([req.args for req in reqs])
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 820, in fn
+    rem_res = getattr(self.lm, attr)(remaining_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 185, in loglikelihood
+    return self._loglikelihood_tokens(new_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 295, in _loglikelihood_tokens
+    self._model_call(batched_inps), dim=-1
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 132, in _model_call
+    return self.gpt2(inps)[0][:, :, :50257]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 934, in forward
+    outputs = self.model.decoder(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 698, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 327, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 172, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+Found cached dataset hellaswag (/home/jc3464/.cache/huggingface/datasets/hellaswag/default/0.1.0/c37cd37196278995f42bc32f532730ae9b0d5f0f4a2d3b97735c17ff3ad67169)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  8.92it/s]100%|██████████| 3/3 [00:00<00:00, 25.14it/s]
+No config specified, defaulting to: lambada_openai/default
+Found cached dataset lambada_openai (/home/jc3464/.cache/huggingface/datasets/EleutherAI___lambada_openai/default/1.0.0/57baddecfa09d1790541ef07274c5666abfbe9d2ccd0cd46013cd557b0343095)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 727.80it/s]
+Found cached dataset glue (/home/jc3464/.cache/huggingface/datasets/glue/rte/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 786.28it/s]
+Found cached dataset piqa (/home/jc3464/.cache/huggingface/datasets/piqa/plain_text/1.1.0/6c611c1a9bf220943c4174e117d3b660859665baf1d43156230116185312d011)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 689.93it/s]
+Found cached dataset winogrande (/home/jc3464/.cache/huggingface/datasets/winogrande/winogrande_xl/1.1.0/a826c3d3506aefe0e9e9390dcb53271070536586bab95849876b2c1743df56e2)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 696.15it/s]
+Found cached dataset super_glue (/home/jc3464/.cache/huggingface/datasets/super_glue/copa/1.0.3/bb9675f958ebfee0d5d6dc5476fafe38c79123727a7258d515c450873dbdbbed)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 739.95it/s]
+Found cached dataset wikitext (/home/jc3464/.cache/huggingface/datasets/wikitext/wikitext-2-raw-v1/1.0.0/c7f10a7786444f898dd236db33d4bee9b130f8cbcac690e7bde9b0d027e19fc1)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 851.52it/s]
+Found cached dataset openbookqa (/home/jc3464/.cache/huggingface/datasets/openbookqa/main/1.0.1/f338ccacfbc86fb8c2de3aa1c06d2ce686933de3bca284dba97d32592c52b33f)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 663.62it/s]
+  0%|          | 0/54260 [00:00<?, ?it/s]  0%|          | 0/54260 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 88, in simple_evaluate
+    results = evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 249, in evaluate
+    resps = getattr(lm, reqtype)([req.args for req in reqs])
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 820, in fn
+    rem_res = getattr(self.lm, attr)(remaining_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 185, in loglikelihood
+    return self._loglikelihood_tokens(new_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 295, in _loglikelihood_tokens
+    self._model_call(batched_inps), dim=-1
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 132, in _model_call
+    return self.gpt2(inps)[0][:, :, :50257]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 934, in forward
+    outputs = self.model.decoder(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 698, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 327, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 172, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+slurmstepd: error: *** JOB 216401 ON ellis-compute-01 CANCELLED AT 2023-01-09T23:25:50 ***

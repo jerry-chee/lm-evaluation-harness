@@ -1,0 +1,24 @@
+{
+  "results": {
+    "piqa": {
+      "acc": 0.7589771490750816,
+      "acc_stderr": 0.009979042717267314,
+      "acc_norm": 0.7682263329706203,
+      "acc_norm_stderr": 0.009845143772794041
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-13b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

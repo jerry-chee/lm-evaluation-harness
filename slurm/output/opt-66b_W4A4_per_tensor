@@ -1,0 +1,66 @@
+{
+  "results": {
+    "copa": {
+      "acc": 0.86,
+      "acc_stderr": 0.034873508801977704
+    },
+    "piqa": {
+      "acc": 0.7883569096844396,
+      "acc_stderr": 0.009530351270479399,
+      "acc_norm": 0.7992383025027203,
+      "acc_norm_stderr": 0.009345961674823405
+    },
+    "winogrande": {
+      "acc": 0.6890292028413575,
+      "acc_stderr": 0.013009534736286061
+    },
+    "rte": {
+      "acc": 0.6028880866425993,
+      "acc_stderr": 0.029452371378346817
+    },
+    "lambada_openai": {
+      "ppl": 3.297452065969606,
+      "ppl_stderr": 0.06389416174993408,
+      "acc": 0.736852319037454,
+      "acc_stderr": 0.006134823516779089
+    },
+    "openbookqa": {
+      "acc": 0.308,
+      "acc_stderr": 0.020667032987466104,
+      "acc_norm": 0.414,
+      "acc_norm_stderr": 0.02204949796982787
+    },
+    "hellaswag": {
+      "acc": 0.5636327424815774,
+      "acc_stderr": 0.0049492079472659226,
+      "acc_norm": 0.747858992232623,
+      "acc_norm_stderr": 0.00433354308329347
+    },
+    "wikitext": {
+      "word_perplexity": 10.103485223007333,
+      "byte_perplexity": 1.541136610540842,
+      "bits_per_byte": 0.6239947519334045
+    }
+  },
+  "versions": {
+    "copa": 0,
+    "piqa": 0,
+    "winogrande": 0,
+    "rte": 0,
+    "wikitext": 1,
+    "lambada_openai": 0,
+    "openbookqa": 0,
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-66b_W4A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,2 @@
+Selected Tasks: ['piqa', 'openbookqa', 'lambada_openai', 'hellaswag', 'copa', 'winogrande', 'wikitext', 'rte']
+Selected Tasks: ['rte', 'openbookqa', 'copa', 'wikitext', 'piqa', 'winogrande', 'hellaswag', 'lambada_openai']

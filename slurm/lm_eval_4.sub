@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH --job-name=4_lm_eval
+#SBATCH -N 1
+#SBATCH --cpus-per-task 32
+#SBATCH --mem=40G
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --time 24:00:00
+#SBATCH --output "slurm/logs/lm_eval_4_%j.out"                  # Name of stdout output     log file (%j expands to jobID)
+#SBATCH --error "slurm/logs/lm_eval_4_%j.err"                  # Name of stderr output     log file (%j expands to jobID)
+
+# evaluates model with lm-eval
+source ~/.bashrc
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate lm_eval
+
+model="opt-13b"
+Abit=8
+WPATH=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/
+for Wbit in 2 3 4 8
+do
+NAME="${model}_W${Wbit}A${Abit}_per_tensor"
+echo ${NAME}
+for task in "lambada_openai" "hellaswag" "piqa" "winogrande" "openbookqa" "rte" "copa" "wikitext"
+do
+python main.py \
+    --model gpt2 \
+    --model_args pretrained=${WPATH}${NAME} \
+    --offload_folder lm_offload/tmp2 \
+    --tasks ${task} \
+    --output_path slurm/output/${NAME}_${task} \
+    --custom_load \
+    --custom_name "facebook/${model}" \
+    --custom_a_bits ${Abit}
+done

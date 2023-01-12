@@ -1,0 +1,52 @@
+opt-13b_W2A2_per_tensor
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+Selected Tasks: ['piqa']
+Using device 'cuda'
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+Selected Tasks: ['rte']
+Using device 'cuda'
+Selected Tasks: ['copa']
+Using device 'cuda'
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+opt-13b_W3A2_per_tensor
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+Selected Tasks: ['piqa']
+Using device 'cuda'
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+Selected Tasks: ['rte']
+Using device 'cuda'
+Selected Tasks: ['copa']
+Using device 'cuda'
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+opt-13b_W4A2_per_tensor
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+Selected Tasks: ['piqa']
+Using device 'cuda'
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+Selected Tasks: ['rte']
+Using device 'cuda'
+Selected Tasks: ['copa']
+Using device 'cuda'
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+opt-13b_W8A2_per_tensor

@@ -1,0 +1,4 @@
+Selected Tasks: ['copa', 'piqa', 'rte', 'openbookqa', 'wikitext', 'winogrande', 'lambada_openai', 'hellaswag']
+Using device 'cuda'
+Selected Tasks: ['hellaswag', 'openbookqa', 'lambada_openai', 'wikitext', 'winogrande', 'copa', 'rte', 'piqa']
+Using device 'cuda'

@@ -2,6 +2,12 @@ import transformers
 import torch
 from lm_eval.base import BaseLM
 
+# TODO: this is hacky
+import sys
+parentpath = "/home/jc3464/QuantHerd/quant-balance-herd-smooth/"
+print(f"adding parentpath {parentpath}")
+sys.path.insert(1, str(parentpath))
+from quantize.fake_quant import load_OPTQ_local
 
 class HFLM(BaseLM):
     def __init__(
@@ -12,7 +18,10 @@ class HFLM(BaseLM):
         subfolder=None,
         tokenizer=None,
         batch_size=1,
-        offload_folder="lm_offload"
+        offload_folder="lm_offload",
+        custom_load=False,
+        custom_name="facebook/opt-125m",
+        custom_a_bits=8,
     ):
         super().__init__()
 
@@ -38,16 +47,27 @@ class HFLM(BaseLM):
         # TODO: update this to be less of a hack once subfolder is fixed in HF
         revision = revision + ("/" + subfolder if subfolder is not None else "")
 
-        self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
-            pretrained,
-            revision=revision,
-            # TODO: jerry update for LLM load
-            use_auth_token="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",
-            torch_dtype=torch.float16,
-            device_map='auto',
-            offload_folder=offload_folder,
-            offload_state_dict=True,
-        ) #.to(self.device)
+        if custom_load:
+            self.gpt2 = load_OPTQ_local(
+                model_name=custom_name,
+                load_path=pretrained,
+                a_bits=custom_a_bits,
+                dtype=torch.float16,
+                device_map='auto',
+                offload_folder=offload_folder,
+                offload_state_dict=True,
+            )
+        else:
+            self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
+                pretrained,
+                revision=revision,
+                # TODO: jerry update for LLM load
+                use_auth_token="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",
+                torch_dtype=torch.float16,
+                device_map='auto',
+                offload_folder=offload_folder,
+                offload_state_dict=True,
+            ) #.to(self.device)
         self.gpt2.eval()
 
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(

@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 66, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 41, in __init__
+    self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 463, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2379, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2646, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 621, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, value=param)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 123, in set_module_tensor_to_device
+    new_value = value.to(device)
+NotImplementedError: Cannot copy out of meta tensor; no data!
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 66, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 41, in __init__
+    self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 463, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2379, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2646, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 621, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, value=param)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 123, in set_module_tensor_to_device
+    new_value = value.to(device)
+NotImplementedError: Cannot copy out of meta tensor; no data!
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 66, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 41, in __init__
+    self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 463, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2379, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2646, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 621, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, value=param)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 123, in set_module_tensor_to_device
+    new_value = value.to(device)
+NotImplementedError: Cannot copy out of meta tensor; no data!
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 83, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 66, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 41, in __init__
+    self.gpt2 = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 463, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2379, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2646, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/modeling_utils.py", line 621, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, value=param)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 123, in set_module_tensor_to_device
+    new_value = value.to(device)
+NotImplementedError: Cannot copy out of meta tensor; no data!

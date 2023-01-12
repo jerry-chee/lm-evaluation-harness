@@ -1,0 +1,256 @@
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+Running loglikelihood requests
+bootstrapping for stddev: perplexity
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 4.252707897136201,
+      "ppl_stderr": 0.0927184630096403,
+      "acc": 0.6768872501455463,
+      "acc_stderr": 0.0065154930732499805
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|     Task     |Version|Metric|Value |   |Stderr|
+|--------------|------:|------|-----:|---|-----:|
+|lambada_openai|      0|ppl   |4.2527|±  |0.0927|
+|              |       |acc   |0.6769|±  |0.0065|
+
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.5050786695877315,
+      "acc_stderr": 0.004989524003092447,
+      "acc_norm": 0.6720772754431388,
+      "acc_norm_stderr": 0.004684970696902951
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task   |Version| Metric |Value |   |Stderr|
+|---------|------:|--------|-----:|---|-----:|
+|hellaswag|      0|acc     |0.5051|±  |0.0050|
+|         |       |acc_norm|0.6721|±  |0.0047|
+
+Selected Tasks: ['piqa']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "piqa": {
+      "acc": 0.7622415669205659,
+      "acc_stderr": 0.009932525779525489,
+      "acc_norm": 0.76550598476605,
+      "acc_norm_stderr": 0.00988520314324054
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version| Metric |Value |   |Stderr|
+|----|------:|--------|-----:|---|-----:|
+|piqa|      0|acc     |0.7622|±  |0.0099|
+|    |       |acc_norm|0.7655|±  |0.0099|
+
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.6527229676400947,
+      "acc_stderr": 0.013380909249751233
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version|Metric|Value |   |Stderr|
+|----------|------:|------|-----:|---|-----:|
+|winogrande|      0|acc   |0.6527|±  |0.0134|
+
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.276,
+      "acc_stderr": 0.020011219298073524,
+      "acc_norm": 0.372,
+      "acc_norm_stderr": 0.0216371979857224
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version| Metric |Value|   |Stderr|
+|----------|------:|--------|----:|---|-----:|
+|openbookqa|      0|acc     |0.276|±  |0.0200|
+|          |       |acc_norm|0.372|±  |0.0216|
+
+Selected Tasks: ['rte']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "rte": {
+      "acc": 0.5523465703971119,
+      "acc_stderr": 0.029931070362939526
+    }
+  },
+  "versions": {
+    "rte": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value |   |Stderr|
+|----|------:|------|-----:|---|-----:|
+|rte |      0|acc   |0.5523|±  |0.0299|
+
+Selected Tasks: ['copa']
+Using device 'cuda'
+Running loglikelihood requests
+{
+  "results": {
+    "copa": {
+      "acc": 0.81,
+      "acc_stderr": 0.03942772444036623
+    }
+  },
+  "versions": {
+    "copa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value|   |Stderr|
+|----|------:|------|----:|---|-----:|
+|copa|      0|acc   | 0.81|±  |0.0394|
+
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+Running loglikelihood_rolling requests
+{
+  "results": {
+    "wikitext": {
+      "word_perplexity": 12.286252442733993,
+      "byte_perplexity": 1.5985524113679301,
+      "bits_per_byte": 0.6767660462022759
+    }
+  },
+  "versions": {
+    "wikitext": 1
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-6.7b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-6.7b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task  |Version|    Metric     | Value |   |Stderr|
+|--------|------:|---------------|------:|---|------|
+|wikitext|      1|word_perplexity|12.2863|   |      |
+|        |       |byte_perplexity| 1.5986|   |      |
+|        |       |bits_per_byte  | 0.6768|   |      |
+

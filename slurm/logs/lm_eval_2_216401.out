@@ -1,0 +1,6 @@
+Selected Tasks: ['hellaswag', 'rte', 'winogrande', 'lambada_openai', 'piqa', 'wikitext', 'copa', 'openbookqa']
+Using device 'cuda'
+Running loglikelihood requests
+Selected Tasks: ['hellaswag', 'lambada_openai', 'rte', 'piqa', 'winogrande', 'copa', 'wikitext', 'openbookqa']
+Using device 'cuda'
+Running loglikelihood requests

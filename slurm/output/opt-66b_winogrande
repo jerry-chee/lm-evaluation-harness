@@ -1,0 +1,22 @@
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.6874506708760852,
+      "acc_stderr": 0.013027563620748837
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-66b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

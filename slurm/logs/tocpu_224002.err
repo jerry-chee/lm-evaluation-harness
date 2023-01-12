@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "to_cpu.py", line 16, in <module>
+    t = torch.load(join(args.path,f), map_device='cpu')
+  File "/home/jc3464/anaconda3/envs/smoothquant/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/smoothquant/lib/python3.8/site-packages/torch/serialization.py", line 1047, in _load
+    unpickler = UnpicklerWrapper(data_file, **pickle_load_args)
+TypeError: 'map_device' is an invalid keyword argument for Unpickler()

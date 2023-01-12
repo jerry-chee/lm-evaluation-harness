@@ -1,0 +1,48 @@
+No config specified, defaulting to: lambada_openai/default
+Found cached dataset lambada_openai (/home/jc3464/.cache/huggingface/datasets/EleutherAI___lambada_openai/default/1.0.0/57baddecfa09d1790541ef07274c5666abfbe9d2ccd0cd46013cd557b0343095)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  6.44it/s]100%|██████████| 1/1 [00:00<00:00,  6.43it/s]
+  0%|          | 0/5151 [00:00<?, ?it/s]  0%|          | 0/5151 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 98, in simple_evaluate
+    results = evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 259, in evaluate
+    resps = getattr(lm, reqtype)([req.args for req in reqs])
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 820, in fn
+    rem_res = getattr(self.lm, attr)(remaining_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 185, in loglikelihood
+    return self._loglikelihood_tokens(new_reqs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 295, in _loglikelihood_tokens
+    self._model_call(batched_inps), dim=-1
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 152, in _model_call
+    return self.gpt2(inps)[0][:, :, :50257]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 156, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 291, in forward
+    return self.model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 934, in forward
+    outputs = self.model.decoder(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 698, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 327, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 209, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:1 and cuda:0! (when checking argument for argument mat2 in method wrapper_bmm)

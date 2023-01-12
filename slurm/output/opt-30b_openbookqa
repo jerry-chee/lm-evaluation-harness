@@ -1,0 +1,24 @@
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.302,
+      "acc_stderr": 0.020553269174209184,
+      "acc_norm": 0.404,
+      "acc_norm_stderr": 0.02196663529383292
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-30b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 113, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 81, in main
+    if not os.path.isdir(args.offload_folder): os.mkdir(args.offload_folder)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/genericpath.py", line 42, in isdir
+    st = os.stat(s)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+slurmstepd: error: *** JOB 202371 ON ellis-compute-02 CANCELLED AT 2023-01-05T01:39:07 ***

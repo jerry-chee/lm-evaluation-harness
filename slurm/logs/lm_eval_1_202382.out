@@ -1,0 +1,37 @@
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+Running loglikelihood requests
+bootstrapping for stddev: perplexity
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 3.6290585853609265,
+      "ppl_stderr": 0.07410155305289352,
+      "acc": 0.7145352222006598,
+      "acc_stderr": 0.006292165813769917
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-30b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=facebook/opt-30b), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|     Task     |Version|Metric|Value |   |Stderr|
+|--------------|------:|------|-----:|---|-----:|
+|lambada_openai|      0|ppl   |3.6291|±  |0.0741|
+|              |       |acc   |0.7145|±  |0.0063|
+
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+Running loglikelihood requests

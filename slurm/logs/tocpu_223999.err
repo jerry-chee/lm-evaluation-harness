@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "to_cpu.py", line 12, in <module>
+    if os.isfile(os.join(args.path, f)):
+AttributeError: module 'os' has no attribute 'isfile'

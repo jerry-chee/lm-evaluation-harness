@@ -1,0 +1,3 @@
+/var/spool/slurmd/job202939/slurm_script: line 18: 1041898 Bus error               (core dumped) python main.py --model gpt2 --model_args pretrained=${WPATH} --offload_folder lm_offload/tmp3 --tasks lambada_openai,hellaswag,piqa,winogrande,openbookqa,rte,copa,wikitext --output_path slurm/output/${model}
+/var/spool/slurmd/job202939/slurm_script: line 18: 1042345 Bus error               (core dumped) python main.py --model gpt2 --model_args pretrained=${WPATH} --offload_folder lm_offload/tmp3 --tasks lambada_openai,hellaswag,piqa,winogrande,openbookqa,rte,copa,wikitext --output_path slurm/output/${model}
+slurmstepd: error: *** JOB 202939 ON lil-compute-01 CANCELLED AT 2023-01-05T15:13:33 ***

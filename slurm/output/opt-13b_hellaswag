@@ -1,0 +1,24 @@
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.5244971121290579,
+      "acc_stderr": 0.004983788992681208,
+      "acc_norm": 0.6985660227046405,
+      "acc_norm_stderr": 0.004579429184835869
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-13b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -42,6 +42,9 @@ def parse_args():
     parser.add_argument("--description_dict_path", default=None)
     parser.add_argument("--check_integrity", action="store_true")
     parser.add_argument("--offload_folder", type=str, default=None)
+    parser.add_argument("--custom_load", action="store_true")
+    parser.add_argument("--custom_name", type=str, default=None)
+    parser.add_argument("--custom_a_bits", type=int, default=None)
 
     return parser.parse_args()
 
@@ -93,6 +96,9 @@ def main():
         decontamination_ngrams_path=args.decontamination_ngrams_path,
         check_integrity=args.check_integrity,
         offload_folder=args.offload_folder,
+        custom_load=args.custom_load,
+        custom_name=args.custom_name,
+        custom_a_bits=args.custom_a_bits,
     )
 
     dumped = json.dumps(results, indent=2)

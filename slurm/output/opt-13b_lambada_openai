@@ -1,0 +1,24 @@
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 4.037738556920632,
+      "ppl_stderr": 0.08695757473480915,
+      "acc": 0.6865903357267611,
+      "acc_stderr": 0.006462746304240015
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-13b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -24,6 +24,9 @@ def simple_evaluate(
     check_integrity=False,
     decontamination_ngrams_path=None,
     offload_folder="lm_offload",
+    custom_load=False,
+    custom_name="facebook/opt-125m",
+    custom_a_bits=8,
 ):
 
     """Instantiate and evaluate a model on a list of tasks.
@@ -64,7 +67,14 @@ def simple_evaluate(
         if model_args is None:
             model_args = ""
         lm = lm_eval.models.get_model(model).create_from_arg_string(
-            model_args, {"batch_size": batch_size, "device": device, "offload_folder": offload_folder}
+            model_args, {
+                "batch_size": batch_size, 
+                "device": device, 
+                "offload_folder": offload_folder,
+                "custom_load": custom_load,
+                "custom_name": custom_name,
+                "custom_a_bits": custom_a_bits
+            }
         )
     else:
         assert isinstance(model, lm_eval.base.LM)

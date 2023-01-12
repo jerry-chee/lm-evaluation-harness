@@ -1,0 +1,66 @@
+{
+  "results": {
+    "piqa": {
+      "acc": 0.764961915125136,
+      "acc_stderr": 0.009893146688805324,
+      "acc_norm": 0.7736670293797606,
+      "acc_norm_stderr": 0.009763294246879417
+    },
+    "rte": {
+      "acc": 0.5703971119133574,
+      "acc_stderr": 0.02979666882912467
+    },
+    "lambada_openai": {
+      "ppl": 3.6327283602828304,
+      "ppl_stderr": 0.07413450396865594,
+      "acc": 0.7125946050844169,
+      "acc_stderr": 0.0063049376460589295
+    },
+    "openbookqa": {
+      "acc": 0.306,
+      "acc_stderr": 0.020629569998345403,
+      "acc_norm": 0.406,
+      "acc_norm_stderr": 0.02198396209008633
+    },
+    "winogrande": {
+      "acc": 0.6771902131018153,
+      "acc_stderr": 0.013140498173357938
+    },
+    "hellaswag": {
+      "acc": 0.4444333798048198,
+      "acc_stderr": 0.004958872288442142,
+      "acc_norm": 0.5324636526588329,
+      "acc_norm_stderr": 0.004979252954977325
+    },
+    "copa": {
+      "acc": 0.83,
+      "acc_stderr": 0.0377525168068637
+    },
+    "wikitext": {
+      "word_perplexity": 10.677350285885282,
+      "byte_perplexity": 1.5571405475134839,
+      "bits_per_byte": 0.6388991679555195
+    }
+  },
+  "versions": {
+    "piqa": 0,
+    "rte": 0,
+    "lambada_openai": 0,
+    "openbookqa": 0,
+    "winogrande": 0,
+    "wikitext": 1,
+    "hellaswag": 0,
+    "copa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-30b_W8A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

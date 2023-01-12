@@ -1,0 +1,23 @@
+{
+  "results": {
+    "wikitext": {
+      "word_perplexity": 10.092266408187434,
+      "byte_perplexity": 1.5408164511556857,
+      "bits_per_byte": 0.6236950118986448
+    }
+  },
+  "versions": {
+    "wikitext": 1
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=facebook/opt-66b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
