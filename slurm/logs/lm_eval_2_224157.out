@@ -1,0 +1,25 @@
+opt-6.7b_W2A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['piqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse

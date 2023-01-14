@@ -1,0 +1,72 @@
+opt-13b_W2A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+bootstrapping for stddev: perplexity
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 4.050311747378387,
+      "ppl_stderr": 0.0870963190373125,
+      "acc": 0.6856200271686397,
+      "acc_stderr": 0.006468167477055899
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|     Task     |Version|Metric|Value |   |Stderr|
+|--------------|------:|------|-----:|---|-----:|
+|lambada_openai|      0|ppl   |4.0503|±  |0.0871|
+|              |       |acc   |0.6856|±  |0.0065|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+opt-13b_W3A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+opt-13b_W4A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+opt-13b_W8A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/

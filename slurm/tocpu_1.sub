@@ -18,9 +18,9 @@ WPATH=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/
 
 for model in "opt-6.7b"
 do
-for Abit in 4 #8
+for Abit in 4 8
 do
-for Wbit in 2 3 4 8
+for Wbit in 6 #2 3 4 8
 do
 NAME="${model}_W${Wbit}A${Abit}_per_tensor"
 echo ${NAME}

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=2_lm_eval
 #SBATCH -N 1
-#SBATCH --cpus-per-task 32
+#SBATCH --cpus-per-task 16
 #SBATCH --mem=40G
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:2
@@ -17,7 +17,7 @@ conda activate lm_eval
 model="opt-6.7b"
 Abit=8
 WPATH=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/
-for Wbit in 2 #3 4 8
+for Wbit in 6 #2 #3 4 8
 do
 NAME="${model}_W${Wbit}A${Abit}_per_tensor"
 echo ${NAME}
@@ -26,7 +26,7 @@ do
 python main.py \
     --model gpt2 \
     --model_args pretrained=${WPATH}${NAME} \
-    --offload_folder lm_offload/tmp2 \
+    --offload_folder lm_offload/tmp2tmp \
     --tasks ${task} \
     --output_path slurm/output/${NAME}_${task} \
     --custom_load \

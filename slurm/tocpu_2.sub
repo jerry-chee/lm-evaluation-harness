@@ -20,7 +20,7 @@ for model in "opt-13b"
 do
 for Abit in 4
 do
-for Wbit in 2 3 4 8
+for Wbit in 6 #2 3 4 8
 do
 NAME="${model}_W${Wbit}A${Abit}_per_tensor"
 echo ${NAME}

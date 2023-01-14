@@ -1,0 +1,118 @@
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 336, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 385, in load_checkpoint_and_dispatch
+    return dispatch_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 290, in dispatch_model
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  [Previous line repeated 2 more times]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 465, in attach_align_device_hook_on_blocks
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 378, in attach_align_device_hook
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 369, in attach_align_device_hook
+    add_hook_to_module(module, hook, append=True)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 146, in add_hook_to_module
+    module = hook.init_hook(module)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 254, in init_hook
+    set_module_tensor_to_device(module, name, self.execution_device)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 121, in set_module_tensor_to_device
+    new_value = old_value.to(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 11.91 GiB total capacity; 11.40 GiB already allocated; 3.00 MiB free; 11.41 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 336, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 385, in load_checkpoint_and_dispatch
+    return dispatch_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 290, in dispatch_model
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  [Previous line repeated 2 more times]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 465, in attach_align_device_hook_on_blocks
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 378, in attach_align_device_hook
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 369, in attach_align_device_hook
+    add_hook_to_module(module, hook, append=True)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 146, in add_hook_to_module
+    module = hook.init_hook(module)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 254, in init_hook
+    set_module_tensor_to_device(module, name, self.execution_device)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 121, in set_module_tensor_to_device
+    new_value = old_value.to(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 11.91 GiB total capacity; 11.40 GiB already allocated; 3.00 MiB free; 11.41 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 336, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 385, in load_checkpoint_and_dispatch
+    return dispatch_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 290, in dispatch_model
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 486, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+  [Previous line repeated 2 more times]
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 465, in attach_align_device_hook_on_blocks
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 378, in attach_align_device_hook
+    attach_align_device_hook(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 369, in attach_align_device_hook
+    add_hook_to_module(module, hook, append=True)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 146, in add_hook_to_module
+    module = hook.init_hook(module)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/hooks.py", line 254, in init_hook
+    set_module_tensor_to_device(module, name, self.execution_device)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 121, in set_module_tensor_to_device
+    new_value = old_value.to(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 11.91 GiB total capacity; 11.40 GiB already allocated; 3.00 MiB free; 11.41 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+slurmstepd: error: *** JOB 224159 ON sablab-gpu-01 CANCELLED AT 2023-01-12T17:16:25 ***

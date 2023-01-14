@@ -1,0 +1,448 @@
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 230, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 230, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 230, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 230, in OPTQuant
+    xr = x_in.reshape(-1, x_in.shape[-1])
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 232, in OPTQuant
+    module.qhessian.add_( (xr.T @ xr) / len(dataset))
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 7, in <module>
+    from lm_eval import tasks, evaluator
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 6, in <module>
+    import lm_eval.models
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/__init__.py", line 1, in <module>
+    from . import gpt2
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 10, in <module>
+    from quantize.fake_quant import load_OPTQ_local
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 173, in <module>
+    class OPTQuant(OPTPreTrainedModel):
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 233, in OPTQuant
+    for m in model.modules():
+NameError: name 'model' is not defined

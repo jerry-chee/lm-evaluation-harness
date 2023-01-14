@@ -6,7 +6,7 @@
 #SBATCH --partition=damle
 #SBATCH --time 24:00:00
 #SBATCH --output "slurm/logs/tocpu_3_%j.out"                  # Name of stdout output     log file (%j expands to jobID)
-#SBATCH --error "slurm/logs/tocpu_%3_j.err"                  # Name of stderr output     log file (%j expands to jobID)
+#SBATCH --error "slurm/logs/tocpu_3_j.err"                  # Name of stderr output     log file (%j expands to jobID)
 
 # evaluates model with lm-eval
 
@@ -20,7 +20,7 @@ for model in "opt-13b"
 do
 for Abit in 8
 do
-for Wbit in 2 3 4 8
+for Wbit in 6 #2 3 4 8
 do
 NAME="${model}_W${Wbit}A${Abit}_per_tensor"
 echo ${NAME}

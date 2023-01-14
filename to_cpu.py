@@ -12,7 +12,7 @@ if __name__ == '__main__':
     for f in listdir(args.path):
         if isfile(join(args.path, f)):
             print(f)
-            if '.bin' in f:
+            if ('.bin' in f) and ('.json' not in f):
                 t = torch.load(join(args.path,f), map_location='cpu')
                 print(t)
                 torch.save(t, join(args.path,f))

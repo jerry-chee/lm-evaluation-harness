@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=5_lm_eval
 #SBATCH -N 1
-#SBATCH --cpus-per-task 32
+#SBATCH --cpus-per-task 16
 #SBATCH --mem=40G
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:3
 #SBATCH --time 24:00:00
 #SBATCH --output "slurm/logs/lm_eval_5_%j.out"                  # Name of stdout output     log file (%j expands to jobID)
 #SBATCH --error "slurm/logs/lm_eval_5_%j.err"                  # Name of stderr output     log file (%j expands to jobID)
@@ -26,10 +26,11 @@ do
 python main.py \
     --model gpt2 \
     --model_args pretrained=${WPATH}${NAME} \
-    --offload_folder lm_offload/tmp2 \
+    --offload_folder lm_offload/tmp5 \
     --tasks ${task} \
     --output_path slurm/output/${NAME}_${task} \
     --custom_load \
     --custom_name "facebook/${model}" \
     --custom_a_bits ${Abit}
+done
 done
