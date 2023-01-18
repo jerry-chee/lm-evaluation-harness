@@ -1,0 +1,24 @@
+{
+  "results": {
+    "piqa": {
+      "acc": 0.5217627856365615,
+      "acc_stderr": 0.01165476861856007,
+      "acc_norm": 0.5048966267682263,
+      "acc_norm_stderr": 0.011665264730078145
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

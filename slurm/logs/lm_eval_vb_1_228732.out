@@ -1,0 +1,78 @@
+/home/jc3464/tmpdir/tmp.ep2gARXhUg
+opt-6.7b_VecBal_N16384_W2A8Q8_per_tensor_noZ_Bias
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['lambada_openai']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['hellaswag']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['piqa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['copa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+opt-6.7b_VecBal_N16384_W3A8Q8_per_tensor_noZ_Bias
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['piqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['copa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+opt-6.7b_VecBal_N16384_W4A8Q8_per_tensor_noZ_Bias

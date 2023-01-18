@@ -1,0 +1,24 @@
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.132,
+      "acc_stderr": 0.015152927850580157,
+      "acc_norm": 0.264,
+      "acc_norm_stderr": 0.019732885585922098
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_balancequant_fix/opt-6.7b_VecBal_N16384_W4A8Q8_per_tensor_noZ_Bias",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

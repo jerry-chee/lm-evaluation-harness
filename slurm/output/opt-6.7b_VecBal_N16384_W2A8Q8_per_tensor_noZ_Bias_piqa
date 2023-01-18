@@ -1,0 +1,24 @@
+{
+  "results": {
+    "piqa": {
+      "acc": 0.5233949945593036,
+      "acc_stderr": 0.011653047155927788,
+      "acc_norm": 0.501088139281828,
+      "acc_norm_stderr": 0.011665796539540876
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_balancequant_fix/opt-6.7b_VecBal_N16384_W2A8Q8_per_tensor_noZ_Bias",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

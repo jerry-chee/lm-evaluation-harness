@@ -1,0 +1,461 @@
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 84, in main
+    if not os.path.isdir(args.offload_folder): os.mkdir(args.offload_folder)
+FileNotFoundError: [Errno 2] No such file or directory: 'lm_offload/vbal/tmp1'
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 84, in main
+    if not os.path.isdir(args.offload_folder): os.mkdir(args.offload_folder)
+FileNotFoundError: [Errno 2] No such file or directory: 'lm_offload/vbal/tmp1'
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 84, in main
+    if not os.path.isdir(args.offload_folder): os.mkdir(args.offload_folder)
+FileNotFoundError: [Errno 2] No such file or directory: 'lm_offload/vbal/tmp1'
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+Traceback (most recent call last):
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 119, in <module>
+    main()
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/main.py", line 86, in main
+    results = evaluator.simple_evaluate(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/utils.py", line 161, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/evaluator.py", line 69, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/home/jc3464/QuantHerd/lm-evaluation-harness/lm_eval/models/gpt2.py", line 51, in __init__
+    self.gpt2 = load_OPTQ_local(
+  File "/home/jc3464/QuantHerd/quant-balance-herd-smooth/quantize/fake_quant.py", line 595, in load_OPTQ_local
+    load_checkpoint_and_dispatch(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/big_modeling.py", line 375, in load_checkpoint_and_dispatch
+    load_checkpoint_in_model(
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 677, in load_checkpoint_in_model
+    checkpoint = torch.load(checkpoint_file)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 1083, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 215, in default_restore_location
+    result = fn(storage, location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/home/jc3464/anaconda3/envs/lm_eval/lib/python3.10/site-packages/torch/serialization.py", line 173, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on CUDA device '
+RuntimeError: Attempting to deserialize object on CUDA device 1 but torch.cuda.device_count() is 1. Please use torch.load with map_location to map your storages to an existing device.
+slurmstepd: error: *** JOB 228732 ON desa-compute-01 CANCELLED AT 2023-01-17T14:14:19 ***

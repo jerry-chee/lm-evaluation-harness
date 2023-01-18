@@ -1,0 +1,50 @@
+opt-6.7b_VecBal_N16384_W6A8Q12_per_tensor_noZ_Bias
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['lambada_openai']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['hellaswag']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['piqa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['winogrande']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['openbookqa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['rte']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['copa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['wikitext']
+opt-6.7b_VecBal_N16384_W8A8Q12_per_tensor_noZ_Bias
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['lambada_openai']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['hellaswag']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['piqa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['winogrande']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['openbookqa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['rte']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['copa']
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+fake_quant adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth
+Selected Tasks: ['wikitext']

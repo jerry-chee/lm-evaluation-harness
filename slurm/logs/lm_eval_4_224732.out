@@ -42,3 +42,719 @@ Using device 'cuda'
 replacing linear layers with WALinear with copy_dataFalse
 quantizingA(per_tensor) to A8 with quantize_outputTrue
 Running loglikelihood requests
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.2680740888269269,
+      "acc_stderr": 0.004420511215131033,
+      "acc_norm": 0.2672774347739494,
+      "acc_norm_stderr": 0.004416339450436122
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task   |Version| Metric |Value |   |Stderr|
+|---------|------:|--------|-----:|---|-----:|
+|hellaswag|      0|acc     |0.2681|±  |0.0044|
+|         |       |acc_norm|0.2673|±  |0.0044|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['piqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "piqa": {
+      "acc": 0.528835690968444,
+      "acc_stderr": 0.011646407809944723,
+      "acc_norm": 0.5081610446137106,
+      "acc_norm_stderr": 0.011664270112244227
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version| Metric |Value |   |Stderr|
+|----|------:|--------|-----:|---|-----:|
+|piqa|      0|acc     |0.5288|±  |0.0116|
+|    |       |acc_norm|0.5082|±  |0.0117|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.4980268350434096,
+      "acc_stderr": 0.014052376259225627
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version|Metric|Value|   |Stderr|
+|----------|------:|------|----:|---|-----:|
+|winogrande|      0|acc   |0.498|±  |0.0141|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.104,
+      "acc_stderr": 0.013665338743182693,
+      "acc_norm": 0.286,
+      "acc_norm_stderr": 0.020229346329177517
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version| Metric |Value|   |Stderr|
+|----------|------:|--------|----:|---|-----:|
+|openbookqa|      0|acc     |0.104|±  |0.0137|
+|          |       |acc_norm|0.286|±  |0.0202|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "rte": {
+      "acc": 0.5270758122743683,
+      "acc_stderr": 0.030052303463143706
+    }
+  },
+  "versions": {
+    "rte": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value |   |Stderr|
+|----|------:|------|-----:|---|-----:|
+|rte |      0|acc   |0.5271|±  |0.0301|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['copa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "copa": {
+      "acc": 0.53,
+      "acc_stderr": 0.050161355804659205
+    }
+  },
+  "versions": {
+    "copa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W2A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value|   |Stderr|
+|----|------:|------|----:|---|-----:|
+|copa|      0|acc   | 0.53|±  |0.0502|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood_rolling requests
+opt-13b_W3A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+bootstrapping for stddev: perplexity
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 1252206.683602503,
+      "ppl_stderr": 102839.72931782284,
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|     Task     |Version|Metric|   Value    |   |  Stderr   |
+|--------------|------:|------|-----------:|---|----------:|
+|lambada_openai|      0|ppl   |1252206.6836|±  |102839.7293|
+|              |       |acc   |      0.0000|±  |     0.0000|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.25721967735510853,
+      "acc_stderr": 0.004362081806560237,
+      "acc_norm": 0.26020713005377416,
+      "acc_norm_stderr": 0.004378508362084373
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task   |Version| Metric |Value |   |Stderr|
+|---------|------:|--------|-----:|---|-----:|
+|hellaswag|      0|acc     |0.2572|±  |0.0044|
+|         |       |acc_norm|0.2602|±  |0.0044|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['piqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "piqa": {
+      "acc": 0.5217627856365615,
+      "acc_stderr": 0.01165476861856007,
+      "acc_norm": 0.5048966267682263,
+      "acc_norm_stderr": 0.011665264730078145
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version| Metric |Value |   |Stderr|
+|----|------:|--------|-----:|---|-----:|
+|piqa|      0|acc     |0.5218|±  |0.0117|
+|    |       |acc_norm|0.5049|±  |0.0117|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.5327545382794001,
+      "acc_stderr": 0.01402230057043413
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version|Metric|Value |   |Stderr|
+|----------|------:|------|-----:|---|-----:|
+|winogrande|      0|acc   |0.5328|±  | 0.014|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.124,
+      "acc_stderr": 0.01475409660851756,
+      "acc_norm": 0.29,
+      "acc_norm_stderr": 0.02031317923174519
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version| Metric |Value|   |Stderr|
+|----------|------:|--------|----:|---|-----:|
+|openbookqa|      0|acc     |0.124|±  |0.0148|
+|          |       |acc_norm|0.290|±  |0.0203|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "rte": {
+      "acc": 0.5270758122743683,
+      "acc_stderr": 0.030052303463143706
+    }
+  },
+  "versions": {
+    "rte": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value |   |Stderr|
+|----|------:|------|-----:|---|-----:|
+|rte |      0|acc   |0.5271|±  |0.0301|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['copa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "copa": {
+      "acc": 0.55,
+      "acc_stderr": 0.05
+    }
+  },
+  "versions": {
+    "copa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W3A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value|   |Stderr|
+|----|------:|------|----:|---|-----:|
+|copa|      0|acc   | 0.55|±  |  0.05|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood_rolling requests
+opt-13b_W4A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['lambada_openai']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+bootstrapping for stddev: perplexity
+{
+  "results": {
+    "lambada_openai": {
+      "ppl": 465628700.27897364,
+      "ppl_stderr": 50595952.99174447,
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    }
+  },
+  "versions": {
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W4A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W4A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|     Task     |Version|Metric|    Value    |   |   Stderr    |
+|--------------|------:|------|------------:|---|------------:|
+|lambada_openai|      0|ppl   |465628700.279|±  |50595952.9917|
+|              |       |acc   |        0.000|±  |       0.0000|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['hellaswag']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A8 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.25712009559848636,
+      "acc_stderr": 0.004361529679492745,
+      "acc_norm": 0.26199960167297354,
+      "acc_norm_stderr": 0.004388237557526723
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W4A8_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-13b_W4A8_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task   |Version| Metric |Value |   |Stderr|
+|---------|------:|--------|-----:|---|-----:|
+|hellaswag|      0|acc     |0.2571|±  |0.0044|
+|         |       |acc_norm|0.2620|±  |0.0044|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+opt-13b_W6A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+opt-13b_W8A8_per_tensor
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/

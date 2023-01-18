@@ -1,0 +1,24 @@
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.2590121489743079,
+      "acc_stderr": 0.004371969542814559,
+      "acc_norm": 0.2548297151961761,
+      "acc_norm_stderr": 0.00434874873052994
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_balancequant_fix/opt-6.7b_VecBal_N16384_W2A8Q8_per_tensor_noZ_Bias",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

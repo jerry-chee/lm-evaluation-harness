@@ -1742,3 +1742,240 @@ Using device 'cuda'
 replacing linear layers with WALinear with copy_dataFalse
 quantizingA(per_tensor) to A4 with quantize_outputTrue
 Running loglikelihood requests
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.25851424019119695,
+      "acc_stderr": 0.004369232540125887,
+      "acc_norm": 0.2695678151762597,
+      "acc_norm_stderr": 0.004428284210103572
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task   |Version| Metric |Value |   |Stderr|
+|---------|------:|--------|-----:|---|-----:|
+|hellaswag|      0|acc     |0.2585|±  |0.0044|
+|         |       |acc_norm|0.2696|±  |0.0044|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['piqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "piqa": {
+      "acc": 0.5223068552774756,
+      "acc_stderr": 0.01165420865259647,
+      "acc_norm": 0.5076169749727966,
+      "acc_norm_stderr": 0.011664470424044981
+    }
+  },
+  "versions": {
+    "piqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version| Metric |Value |   |Stderr|
+|----|------:|--------|-----:|---|-----:|
+|piqa|      0|acc     |0.5223|±  |0.0117|
+|    |       |acc_norm|0.5076|±  |0.0117|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['winogrande']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.5130228887134964,
+      "acc_stderr": 0.014047718393997663
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version|Metric|Value|   |Stderr|
+|----------|------:|------|----:|---|-----:|
+|winogrande|      0|acc   |0.513|±  | 0.014|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['openbookqa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.148,
+      "acc_stderr": 0.015896458561251246,
+      "acc_norm": 0.26,
+      "acc_norm_stderr": 0.01963596552972551
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|   Task   |Version| Metric |Value|   |Stderr|
+|----------|------:|--------|----:|---|-----:|
+|openbookqa|      0|acc     |0.148|±  |0.0159|
+|          |       |acc_norm|0.260|±  |0.0196|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['rte']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "rte": {
+      "acc": 0.5415162454873647,
+      "acc_stderr": 0.029992535385373314
+    }
+  },
+  "versions": {
+    "rte": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value |   |Stderr|
+|----|------:|------|-----:|---|-----:|
+|rte |      0|acc   |0.5415|±  |  0.03|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['copa']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood requests
+{
+  "results": {
+    "copa": {
+      "acc": 0.53,
+      "acc_stderr": 0.05016135580465919
+    }
+  },
+  "versions": {
+    "copa": 0
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|Task|Version|Metric|Value|   |Stderr|
+|----|------:|------|----:|---|-----:|
+|copa|      0|acc   | 0.53|±  |0.0502|
+
+adding parentpath /home/jc3464/QuantHerd/quant-balance-herd-smooth/
+Selected Tasks: ['wikitext']
+Using device 'cuda'
+replacing linear layers with WALinear with copy_dataFalse
+quantizingA(per_tensor) to A4 with quantize_outputTrue
+Running loglikelihood_rolling requests
+{
+  "results": {
+    "wikitext": {
+      "word_perplexity": 55072.576804631506,
+      "byte_perplexity": 7.701558488492728,
+      "bits_per_byte": 2.9451504193281535
+    }
+  },
+  "versions": {
+    "wikitext": 1
+  },
+  "config": {
+    "model": "gpt2",
+    "model_args": "pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": null,
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
+gpt2 (pretrained=/home/jc3464/QuantHerd/quant-balance-herd-smooth/checkpoints_smoothquant/opt-6.7b_W8A4_per_tensor), limit: None, provide_description: False, num_fewshot: 0, batch_size: None
+|  Task  |Version|    Metric     |  Value   |   |Stderr|
+|--------|------:|---------------|---------:|---|------|
+|wikitext|      1|word_perplexity|55072.5768|   |      |
+|        |       |byte_perplexity|    7.7016|   |      |
+|        |       |bits_per_byte  |    2.9452|   |      |
+
